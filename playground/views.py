@@ -6,5 +6,9 @@ from django.http import HttpResponse
 
 
 # REQUEST HANDLER
+## RENDER TAKES IN REQUEST, A TEMPLATE, AND AN OBJECT OF INFO, THAT CAN BE CONDITIONALLY RENDERED IN TEMPLATE HTML
 def say_hello(request):
-    return render(request, 'hello.html')
+    print('ok')
+    return render(request, 'hello.html', {
+        'name': 'Connor'
+    })

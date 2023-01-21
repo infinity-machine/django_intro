@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>CHECK IT OUT!</h1>
+    {% if name %}
+    <h1>SUH {{ name }}</h1>
+    {% else %}
+    <h1>SUH DOOD</h1>
+    {% endif %}
 </body>
 </html>
